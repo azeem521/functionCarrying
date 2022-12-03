@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice for 3 hrs test</title>
+</head>
+<body>
+    <script>
+
+
+// let multiply=function(x,y){
+//     console.log(x*y);
+// }
+// let multiplyTwo=multiply.bind(this,2);
+// multiplyTwo(3)
+// let multiplyThree=multiply.bind(this,3);
+// multiplyThree(7);
+
+// another method using clouser
+
+let multiply=function(x){
+    return function(y){
+        console.log(x*y);
+    }
+}
+let multiplyTwo=multiply(2);
+multiplyTwo(7)
+
+
+
+
+    </script>
+</body>
+</html>
